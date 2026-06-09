@@ -1,0 +1,180 @@
+body {
+  background-color: #0d0d0d;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.navbar-brand {
+  color: #b57aff !important;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #ccc !important;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #b57aff !important;
+}
+.img-carousel {
+  height: 220px;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.carousel-caption {
+  bottom: 25%;
+}
+
+.carousel-caption h3 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 55px;
+  height: 55px;
+  background: rgba(168, 85, 247, 0.6); /* roxo */
+  border-radius: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+  backdrop-filter: blur(6px);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-prev::after,
+.carousel-control-next::after {
+  font-size: 26px;
+  color: #fff;
+}
+
+.carousel-control-prev::after {
+  content: "❮";
+}
+
+.carousel-control-next::after {
+  content: "❯";
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: #a855f7;
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.7);
+}
+
+.carousel-control-prev:hover::after {
+  transform: translateX(-4px);
+}
+
+.carousel-control-next:hover::after {
+  transform: translateX(4px);
+}
+.hero {
+  height: 500px;
+  background-image: linear-gradient(rgba(23, 21, 21, 0.8), rgba(23, 20, 20, 0.9)),
+                    url('../img/1000177514.png'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.texto-pequeno {
+  color: #b57aff;
+  letter-spacing: 2px;
+}
+
+.titulo {
+  font-size: 60px;
+  font-weight: bold;
+  color: #d1a6ff;
+}
+
+.descricao {
+  color: #ccc;
+  max-width: 400px;
+}
+
+.btn-roxo {
+  background-color: #b57aff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.btn-roxo:hover {
+  background-color: #9c5cff;
+}
+
+/* SOBRE */
+#sobre {
+  background-color: #121212;
+  border-radius: 10px;
+}
+
+#sobre h2 {
+  color: #b57aff;
+}
+
+#sobre p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.card {
+  background-color: #121212;
+  color: white;
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+}
+
+.card-title {
+  color: #b57aff;
+}
+
+.accordion-button {
+  background-color: #121212;
+  color: #b57aff;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #1a1a1a;
+  color: #d1a6ff;
+}
+
+.carousel-item p {
+  font-size: 18px;
+  color: #ccc;
+}
+/*footer*/
+.text-purple {
+  color: #b57aff;
+}
+
+footer a:hover {
+  color: #b57aff !important;
+  transition: 0.3s;
+}
+
+footer {
+  border-top: 1px solid #2a2a2a;
+}

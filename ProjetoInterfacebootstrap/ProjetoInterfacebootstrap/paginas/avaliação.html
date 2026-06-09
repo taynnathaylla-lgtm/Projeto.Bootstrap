@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <!-- BOOTSTRAP (ESSENCIAL) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- SEU CSS -->
+    <link rel="stylesheet" href="../style/style3.css">
+</head>
+
+<body>
+  
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">CineTop</a>
+  </div>
+</nav>
+
+
+<section class="container-fluid min-vh-100 d-flex align-items-center justify-content-center">
+
+  <div class="col-11 col-md-8 col-lg-6">
+
+    <div class="bg-dark text-light p-4 rounded-4 shadow-lg">
+
+      <h2 class="text-center text-info fw-bold mb-4">
+        Feedback de Filmes 
+      </h2>
+
+      <form>
+
+        <!-- Nome -->
+        <div class="mb-3">
+          <label class="form-label">Seu nome</label>
+          <input type="text" class="form-control" placeholder="Digite seu nome">
+        </div>
+
+        <!-- Idade -->
+        <div class="mb-3">
+          <label class="form-label">Idade</label>
+          <input type="number" class="form-control" placeholder="Sua idade">
+        </div>
+
+        <!-- Filme -->
+        <div class="mb-3">
+          <label class="form-label">Qual filme você assistiu?</label>
+          <select class="form-select">
+            <option selected>Escolha um filme</option>
+            <option>Mad Max: Estrada da Fúria</option>
+            <option>John Wick 4</option>
+            <option>Corra</option>
+            <option>Invocação do Mal</option>
+            <option>Se Beber Não Case</option>
+            <option>Todo Mundo em Pânico</option>
+            <option>La La Land</option>
+            <option>Diário de uma Paixão</option>
+            <option>Interestelar</option>
+            <option>Supernatural</option>
+            <option>Crepúsculo</option>
+          </select>
+        </div>
+
+        <!-- Frequência -->
+        <div class="mb-3">
+          <label class="form-label">Com que frequência você assiste filmes?</label>
+          <select class="form-select">
+            <option>Todos os dias</option>
+            <option>Algumas vezes por semana</option>
+            <option>Raramente</option>
+          </select>
+        </div>
+
+        <!-- Nota -->
+        <div class="mb-3">
+          <label class="form-label">Nota do filme</label>
+          <select class="form-select">
+            <option>⭐</option>
+            <option>⭐⭐</option>
+            <option>⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐⭐</option>
+          </select>
+        </div>
+
+        <!-- Recomendaria -->
+        <div class="mb-3">
+          <label class="form-label">Você recomendaria esse filme?</label>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rec">
+            <label class="form-check-label">Sim</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="rec">
+            <label class="form-check-label">Não</label>
+          </div>
+        </div>
+
+        <!-- Gênero favorito -->
+        <div class="mb-3">
+          <label class="form-label">Qual seu gênero favorito?</label>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label">Ação</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label">Terror</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label">Comédia</label>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox">
+            <label class="form-check-label">Romance</label>
+          </div>
+        </div>
+
+        <!-- Melhor parte -->
+        <div class="mb-3">
+          <label class="form-label">Melhor parte do filme</label>
+          <input type="text" class="form-control" placeholder="Ex: ação, história, personagens...">
+        </div>
+
+        <!-- Comentário -->
+        <div class="mb-3">
+          <label class="form-label">Comentário geral</label>
+          <textarea class="form-control" rows="4"></textarea>
+        </div>
+
+        <!-- Sugestão -->
+        <div class="mb-3">
+          <label class="form-label">Sugestão de filme</label>
+          <input type="text" class="form-control" placeholder="Indique um filme">
+        </div>
+
+        <!-- Nota do site -->
+        <div class="mb-3">
+          <label class="form-label">O que achou do site?</label>
+          <select class="form-select">
+            <option>Excelente</option>
+            <option>Bom</option>
+            <option>Médio</option>
+            <option>Ruim</option>
+          </select>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox">
+          <label class="form-check-label">
+            Aceito que meus dados sejam usados para melhorias
+          </label>
+        </div>
+
+        <!-- Botão -->
+        <div class="d-grid">
+          <button class="btn btn-info fw-bold">
+            Enviar Feedback
+          </button>
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

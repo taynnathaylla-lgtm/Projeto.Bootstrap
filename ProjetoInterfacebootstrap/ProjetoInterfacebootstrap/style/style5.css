@@ -1,0 +1,63 @@
+
+body {
+  background: linear-gradient(180deg, #0a0a0a, #111);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.card-custom {
+  background: #141414;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: 0.3s;
+}
+
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(216,180,254,0.2);
+}
+
+.form-control {
+  background: #1c1c1c;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.form-control:focus {
+  border-color: #d8b4fe;
+  box-shadow: none;
+  background: #1c1c1c;
+  color: #fff;
+}
+
+.btn-custom {
+  background: #d8b4fe;
+  color: #000;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-custom:hover {
+  background: #c084fc;
+}
+
+.text-info {
+  color: #d8b4fe !important;
+}
+
+img {
+  object-fit: cover;
+  border: 2px solid #d8b4fe;
+}
+
+.map-container {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.map-container iframe {
+  filter: grayscale(20%) contrast(1.1);
+}
