@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CineTop Classificação de filmes e series</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+  <div class="container">
+    <a class="navbar-brand" href="#">CineTop</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="menu" class="collapse navbar-collapse">
+      <ul class="navbar-nav mx-auto">
+
+        <li class="nav-item"><a class="nav-link active">Início</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Categorias</a>
+          <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a class="dropdown-item" href="./paginas/acao.html">Ação</a></li>
+            <li><a class="dropdown-item" href="./paginas/terror.html">Terror</a></li>
+            <li><a class="dropdown-item" href="./paginas/comedia.html">Comédia</a></li>
+            <li><a class="dropdown-item" href="./paginas/romance.html">Romance</a></li>
+            <li><a class="dropdown-item" href="./paginas/myfav.html">My Fav</a></li>
+       
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="./paginas/ranking.html">Ranking</a></li>
+        <li class="nav-item"><a class="nav-link" href="./paginas/equipe.html">Equipe</a></li>
+        <li class="nav-item"><a class="nav-link" href="./paginas/avaliação.html">Avaliação</a></li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<div id="carouselPremios" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselPremios" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#carouselPremios" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carouselPremios" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- ITENS -->
+  <div class="carousel-inner">
+
+    <!-- SLIDE 1 -->
+    <div class="carousel-item active">
+      <img src="./img/oscar.jpg" class="d-block w-100 img-carousel">
+      <div class="carousel-caption">
+        <h3>Filmes premiados com Oscar</h3>
+        <p>Os melhores do cinema mundial</p>
+      </div>
+    </div>
+
+    <!-- SLIDE 2 -->
+    <div class="carousel-item">
+      <img src="./img/globodeouro.jpg" class="d-block w-100 img-carousel">
+      <div class="carousel-caption">
+        <h3>Alta avaliação da crítica</h3>
+        <p>Filmes reconhecidos mundialmente</p>
+      </div>
+    </div>
+
+    <!-- SLIDE 3 -->
+    <div class="carousel-item">
+      <img src="./img/BAFTA Awards 2020.jpg" class="d-block w-100 img-carousel">
+      <div class="carousel-caption">
+        <h3>Top filmes selecionados</h3>
+        <p>Os mais assistidos e comentados</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CONTROLES -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselPremios" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselPremios" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+<!-- HERO -->
+<section class="hero d-flex align-items-center">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-6">
+        <h5 class="texto-pequeno">BEM-VINDO AO</h5>
+        <h1 class="titulo">CineTop</h1>
+
+        <p class="descricao">
+          Seu guia definitivo para os melhores filmes! Descubra os mais premiados,
+          os mais assistidos e encontre o próximo filme que você vai amar.
+        </p>
+
+        <button class="btn btn-roxo">Explorar Filmes</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="container py-5" id="sobre">
+  <div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+      <h2>Sobre o CineTop</h2>
+
+      <p>O CineTop é um site desenvolvido com o objetivo de reunir, organizar e apresentar informações relevantes sobre filmes de diferentes gêneros, oferecendo ao usuário uma experiência simples, intuitiva e informativa. A proposta principal do projeto é criar um ambiente digital onde qualquer pessoa possa explorar recomendações cinematográficas, conhecer obras renomadas e descobrir novos filmes de acordo com seus gostos pessoais.
+</p>
+      <p>Atualmente, com a grande quantidade de filmes lançados todos os anos, muitas pessoas sentem dificuldade em escolher o que assistir. Pensando nisso, o CineTop surge como uma solução prática, funcionando como um guia que destaca os principais filmes com base em critérios como popularidade, premiações e relevância cultural. Dessa forma, o site não apenas lista filmes, mas também organiza essas informações de maneira clara, facilitando a navegação e a tomada de decisão do usuário.
+</p>
+      <p>O site é estruturado em categorias específicas, como ação, romance, terror, comédia e uma categoria livre, permitindo que o conteúdo seja segmentado por gênero. Dentro de cada uma dessas categorias, serão apresentados os “Top 2” filmes, considerando tanto aqueles que receberam prêmios importantes quanto os mais assistidos pelo público. Essa abordagem tem como objetivo equilibrar qualidade crítica e popularidade, oferecendo recomendações mais completas e interessantes.
+</p>
+      <p>
+Além disso, o CineTop também busca proporcionar interatividade. Por meio de formulários, os usuários poderão compartilhar suas opiniões, avaliar filmes e até sugerir novas recomendações. Isso contribui para tornar o site mais dinâmico, simulando um ambiente real onde há troca de informações entre usuários e plataforma. Mesmo que inicialmente essas interações não sejam armazenadas em banco de dados, a estrutura já demonstra a proposta de evolução do projeto.
+</p>
+      <p>O site também contará com seções complementares, como uma área de ranking, onde os filmes são comparados de forma objetiva, e uma página de equipe, apresentando o responsável pelo desenvolvimento do projeto. Há ainda uma seção de contato, com formulário e integração com mapa, permitindo uma simulação mais próxima de um site profissional.
+</p>
+      <p>
+Em termos gerais, o CineTop não é apenas um site sobre filmes, mas sim um projeto que demonstra conhecimentos em desenvolvimento web, organização de conteúdo e experiência do usuário. Ele integra conceitos fundamentais como estruturação em HTML, uso de classes e componentes do Bootstrap, responsividade e criação de interfaces intuitivas.
+</p>
+      <p>Por fim, o principal objetivo do CineTop é oferecer uma plataforma simples, porém eficiente, que ajude os usuários a encontrar bons filmes de maneira rápida e agradável, ao mesmo tempo em que evidencia habilidades técnicas no desenvolvimento de sites. Trata-se de um projeto que une entretenimento e tecnologia, mostrando como é possível transformar uma ideia criativa em uma aplicação funcional e bem estruturada.</p>
+
+    </div>
+  </div>
+</section>
+<section class="container py-5">
+  <h2 class="text-center mb-5"> Em Alta no Ano</h2>
+
+  <div class="row">
+
+    <!-- FILME 1 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="./img/Dune Part Two(2024).jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Duna: Parte Dois</h5>
+          <p class="card-text">
+            Continuação épica com batalhas intensas e uma história envolvente.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FILME 2 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="./img/deadepool.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Deadpool & Wolverine</h5>
+          <p class="card-text">
+            Mistura perfeita de ação e humor com personagens icônicos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SÉRIE 1 -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="./img/The Boys Wallpaper.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">The Boys</h5>
+          <p class="card-text">
+            Série intensa que mostra o lado sombrio dos super-heróis.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SÉRIE 2 (EUPHORIA) -->
+    <div class="col-md-3 mb-4">
+      <div class="card h-100">
+        <img src="./img/Watch Euphoria _ HBO Max.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Euphoria</h5>
+          <p class="card-text">
+            Série marcante que aborda temas como juventude, emoções e identidade
+            de forma intensa e visualmente impactante.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section class="container py-5">
+  <h2>Perguntas Frequentes</h2>
+
+  <div class="accordion" id="accordionExample">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#item1">
+          O que é o CineTop?
+        </button>
+      </h2>
+      <div id="item1" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Um site para descobrir filmes, dar opiniões e descobrir sua relevancia no mundo dos filmes.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#item2">
+          Como escolher filmes?
+        </button>
+      </h2>
+      <div id="item2" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          Veja os tops por gênero e escolha o genero que mais te agradar, ou embarque na minha lista pessoal.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#item3">
+          Como funciona o ranking
+        </button>
+      </h2>
+      <div id="item3" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          O ranking funciona e é organizado através da quantidade de premio recebidos por um filme, e o quão ele é aclamado pela critica.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="container py-5">
+  <h2 class="text-center mb-4"> Depoimentos</h2>
+
+  <div id="carouselDepoimentos" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-inner text-center">
+
+      <div class="carousel-item active">
+        <p>"Amei o site, muito fácil de usar!"</p>
+        <small>- Ana</small>
+      </div>
+
+      <div class="carousel-item">
+        <p>"Descobri vários filmes incríveis aqui."</p>
+        <small>- Lucas</small>
+      </div>
+
+      <div class="carousel-item">
+        <p>"Layout bonito e bem organizado."</p>
+        <small>- Mariana</small>
+      </div>
+
+    </div>
+
+    <!-- BOTÕES -->
+    <button class="carousel-control-prev" type="button"
+      data-bs-target="#carouselDepoimentos" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button"
+      data-bs-target="#carouselDepoimentos" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="bg-black text-light pt-5 pb-4 mt-5">
+
+  <div class="container">
+    <div class="row">
+
+      <!-- SOBRE -->
+      <div class="col-md-4 mb-4">
+        <h3 class="text-purple">CineTop</h3>
+
+        <p>
+        Um site massa dms.
+        </p>
+      </div>
+
+      <!-- LINKS -->
+      <div class="col-md-4 mb-4">
+        <h4 class="mb-3">Links Rápidos</h4>
+
+        <ul class="list-unstyled">
+
+          <li class="mb-2">
+            <a href="./index.html" class="text-decoration-none text-light">
+              Início
+            </a>
+          </li>
+
+          <li class="mb-2">
+            <a href="./paginas/acao.html" class="text-decoration-none text-light">
+              Filmes de Ação
+            </a>
+          </li>
+
+          <li class="mb-2">
+            <a href="./paginas/terror.html" class="text-decoration-none text-light">
+              Terror
+            </a>
+          </li>
+
+          <li class="mb-2">
+            <a href="./paginas/comedia.html" class="text-decoration-none text-light">
+              Comédia
+            </a>
+          </li>
+
+          <li class="mb-2">
+            <a href="./paginas/romance.html" class="text-decoration-none text-light">
+              Romance
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="./paginas/myfav.html" class="text-decoration-none text-light">
+              myFav
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <!-- CONTATO -->
+      <div class="col-md-4 mb-4">
+        <h4 class="mb-3">Contato</h4>
+
+        <p>
+          <i class="fa-solid fa-envelope me-2"></i>
+          contato@cinetop.com
+        </p>
+
+        <p>
+          <i class="fa-solid fa-phone me-2"></i>
+          (61) 99999-9999
+        </p>
+
+        <p>
+          <i class="fa-solid fa-location-dot me-2"></i>
+          Brasília - DF
+        </p>
+
+        <!-- REDES SOCIAIS -->
+        <div class="mt-4">
+
+          <a href="#" class="text-light me-3">
+            <i class="fab fa-instagram fa-2x"></i>
+          </a>
+
+          <a href="#" class="text-light me-3">
+            <i class="fab fa-youtube fa-2x"></i>
+          </a>
+
+          <a href="#" class="text-light">
+            <i class="fab fa-tiktok fa-2x"></i>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-secondary">
+
+
+    <div class="text-center">
+      <p class="mb-0">
+        © 2026 CineTop — Todos os direitos reservados.
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- SCRIPTS\ -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>
